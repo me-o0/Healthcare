@@ -1,9 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <header th:fragment="header">
+      <h1>Healthcare</h1>
+    </header>
+    <footer th:fragment="footer">
+      <p><small>&copy; Taro Yamada</small></p>
+    </footer>
+    <div th:fragment="pager">
+      <p><a href="">1</a><a href="">2</a><a href="">3</a></p>
+    </div>
+  </body>
 </html>
