@@ -12,6 +12,17 @@
     <footer th:fragment="footer">
       <p><small>&copy; Taro Yamada</small></p>
     </footer>
+    <form th:fragment="login" action="" method="post">
+      <p>
+        <label for="username">ユーザー名</label>
+        <input type="text" name="username" id="username" />
+      </p>
+      <p>
+        <label for="password">パスワード</label>
+        <input type="password" name="password" id="password" />
+      </p>
+      <button><input type="submit" value="ログイン" /></button>
+    </form>
     <div th:fragment="pager">
       <p><a href="">1</a><a href="">2</a><a href="">3</a></p>
     </div>
